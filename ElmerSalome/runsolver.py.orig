@@ -105,12 +105,10 @@ class runElmerSolver():
                             cmd = self.expand(str(self._ewh.psWindow.mergeLineEdit.text()))
                             print(cmd)
                             subprocess.Popen(cmd, shell=True)
-                        # print 'Done'
-                        print('Done')
+                        print 'Done'
                         #------------------------------------------------
 
-                    # print 'starting'
-                    print('starting')
+                    print 'starting'
                     sys.stdout.flush()
                     t = Thread(target=solve)
                     t.start()
@@ -140,12 +138,10 @@ class runElmerSolver():
                         output = proc.communicate()[0]
                         exitCode = proc.returncode
                         logfile.close()
-                        # print 'Done'
-                        print('Done')
+                        print 'Done'
                     #------------------------------------------------
 
-                    # print 'starting'
-                    print('starting')
+                    print 'starting'
                     sys.stdout.flush()
                     t = Thread(target=solve)
                     t.start()
